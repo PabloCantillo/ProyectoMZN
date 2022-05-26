@@ -38,15 +38,21 @@ body{
 }
 .container .btn-menu label{
     color: #fff500;
-    font-size: 25px;
+    font-size: 10px;
     cursor: pointer;
+    height: 10px;
 }
-.logo h1{
-    color: #fff500;
-    font-weight: 400;
-    font-size: 22px;
-    margin-left: 10px;
+
+img{
+    max-width: 10%;
+    max-height: 10%;
 }
+
+#logo{
+    width: 10px;
+    height: 10px;
+}
+
 .container .menu{
     float: right;
     line-height: 100px;
@@ -89,11 +95,14 @@ body{
 .cont-menu{
     width: 100%;
     max-width: 250px;
-    background: #1c1c1c;
+    background: #000000;
     height: 100vh;
     position: relative;
     transition: all 500ms ease;
     transform: translateX(-100%);
+    display:flex;
+    flex-direction: column-reverse;
+    padding-bottom: 30px;
 }
 #btn-menu:checked ~ .container-menu .cont-menu{
     transform: translateX(0%);

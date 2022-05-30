@@ -135,18 +135,28 @@
 
 
 /* Inicio Main */
-
-.container-img{
+.container-img a{
     padding-top: 200px;
     display: flex;
     justify-content: center;
 }
-.container-img img{
+.container-img a img{
     max-width: 50%;
+    overflow:hidden;
+    transition: all 0.5s ease-out;
 }
 
+.container-img a img:hover{
+    transition: all 0.5s ease-out;
+    transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+}
+
+
 .texto-central{
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
     text-align: center;
     font-size: 25px;
     display: flex;
